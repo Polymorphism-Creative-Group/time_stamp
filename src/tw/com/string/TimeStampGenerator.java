@@ -51,8 +51,8 @@ public class TimeStampGenerator {
         for (int i = 0; i < number; i++) {
             System.out.printf("%2d.", i + 1);
             tsg.rolling();
-            System.out.printf("%2d:%2d, ", tsg.start.hour, tsg.start.minuet);
-            System.out.printf("%2d:%2d", tsg.end.hour, tsg.end.minuet);
+            System.out.printf("%2d:%02d, ", tsg.start.hour, tsg.start.minuet);
+            System.out.printf("%2d:%02d", tsg.end.hour, tsg.end.minuet);
             System.out.println("");
         }
 
